@@ -1,0 +1,38 @@
+
+@media (max-width: 600px) {
+    .nav-links {
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 220px;
+      flex-direction: column;
+      background-color: #060606d9;;
+      align-items: center;
+      transform: translateX(100%);
+    }
+  
+    .nav-links.active {
+      transform: translateX(0);
+      gap: 77px;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+  
+    .menu-burger {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+    }
+
+    .logo img {
+        border-radius: 20px;
+        padding: 5px;
+        height: 75px;
+        box-shadow: 0 1px 8px rgba(193, 193, 193, 0.1); /* Sombra para o contêiner */
+    }
+  }
