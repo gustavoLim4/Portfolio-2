@@ -29,6 +29,7 @@
           <a href="#sobremim">Sobre mim<span></span></a>
           <a href="#projetos">Projetos<span></span></a>
           <a href="#PGskills">Skills<span></span></a>
+          <a href="#PGcontato">Contato<span></span></a>
         </ul>
       </nav>
     </header>
@@ -92,18 +93,34 @@
         <div class="TdCardsSkills" id="PGskills">
           <div class="skills-front">
             <h1>Front-End</h1>
-            <img src="img/front-end.png" alt="" />
-            <p>HTML,CSS,JavaScript</p>
+            <div class="container-front">
+              <img src="img/front-end.png" alt="" />
+              <ul class="linguagens">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>React</li>
+              </ul>
+            </div>
           </div>
           <div class="skills">
             <h1>Back-End</h1>
-            <img src="img/back-end.png" alt="" />
-            <p>PHP , C#</p>
+            <div class="container-back">
+              <img src="img/back-end.png" alt="" />
+              <ul class="linguagens">
+                <li>PHP</li>
+                <li>C#</li>
+              </ul>
+            </div>
           </div>
           <div class="skills">
             <h1>Banco de Dados</h1>
-            <img src="img/sql.png" alt="" />
-            <p>SQL</p>
+            <div class="container-banco">
+              <img src="img/sql.png" alt="" />
+              <ul class="linguagens">
+                <li>SQL</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -347,11 +364,52 @@
                     <input type="radio" name="radio" />
                     <span class="name">PHP</span>
                   </label>
-                  
                 </div>
               </div>
             </a>
           </div>
+        </div>
+      </section>
+      <section>
+        <div class="contato">
+          <div class="Imagemcontato">
+            <img src="img/fotoAnimada2.png" alt="" />
+          </div>
+          <form class="caixasDTX">
+            <h1>Contato</h1>
+            <div class="container-nome">
+              <input
+                required=""
+                type="text"
+                name="text"
+                id="nome"
+                class="input-nome"
+              />
+              <label class="label">Nome </label>
+            </div>
+            <div class="caixasInput">
+              <div class="container">
+                <input required="" type="email" name="email" class="input" />
+                <label class="label">Email </label>
+              </div>
+              <div class="container">
+                <input
+                  required=""
+                  type="text"
+                  name="text"
+                  id="nome"
+                  class="input"
+                  maxlength="15"
+                  onkeyup="maximoDG(event)"
+                />
+                <label class="label">telefone </label>
+              </div>
+            </div>
+            <div class="container-msg">
+              <textarea class="input-msg" id="input-msg"></textarea>
+              <label class="label">Mensagem </label>
+            </div>
+          </form>
         </div>
       </section>
     </main>
