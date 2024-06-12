@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("click", (event) => {
-    const isClickInsideNav = navLinks.contains(event.target);
-    const isClickInsideBurger = burger.contains(event.target);
-    if (!isClickInsideNav && !isClickInsideBurger) {
+    const clickNavBar = navLinks.contains(event.target);
+    const clickBurguer = burger.contains(event.target);
+    if (!clickNavBar && !clickBurguer) {
       navLinks.classList.remove("active");
       burger.classList.remove("toggle");
     }
