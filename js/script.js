@@ -67,3 +67,4 @@ document
       }, 10);
     });
   });
+  new WOW().init();

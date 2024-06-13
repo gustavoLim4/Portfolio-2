@@ -112,6 +112,7 @@ body {
   line-height: 35px;
   margin-bottom: 50px;
   width: 600px;
+  
 }
 .apresentacao button {
   border: none;
@@ -186,7 +187,7 @@ body {
 .fotominha img {
   width: 120%;
   animation: imgg 2s ease-in-out infinite;
-  animation-delay: 2s;
+  border-radius: 10%;
 }
 #sobremim {
   display: flex;
@@ -277,18 +278,18 @@ body {
   letter-spacing: 3px;
   margin-bottom: 10px;
   opacity: 0;
-  transition: opacity 0.5s; 
+  transition: opacity 0.5s;
 }
 .linguagens li::marker {
   color: #078fff;
 }
 .skills:hover .linguagens li {
   animation: fadeIn 1.1s ease-in-out forwards;
-  opacity: 1; 
+  opacity: 1;
 }
 .skills-front:hover .linguagens li {
   animation: fadeIn 1.1s ease-in-out forwards;
-  opacity: 1; 
+  opacity: 1;
 }
 
 @keyframes fadeIn {
@@ -605,7 +606,7 @@ body {
   position: relative;
   color: white;
   margin: 25px 0px 30px;
-  height: 300px;
+  height: 200px;
   width: 800px;
 }
 
@@ -623,7 +624,7 @@ body {
 
 .input-msg {
   width: 100%;
-  height: 400px;
+  height: 200px;
   border: none;
   outline: none;
   padding: 0px 7px;
@@ -643,7 +644,7 @@ body {
     inset -1px -1px 6px rgba(255, 255, 255, 0.4);
   padding: 60px 20px;
   font-size: 1.4em;
-  height: 185px;
+  height: 90px;
 }
 .container-nome {
   display: flex;
@@ -701,3 +702,50 @@ body {
     -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgba(0, 0, 0, 1),
     inset -1px -1px 6px rgba(255, 255, 255, 0.4);
 }
+
+.btn-enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+
+
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 5px 45px;
+  min-width: 180px;
+  min-height: 80px;
+  font-size: 1.8em;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+
+
