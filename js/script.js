@@ -68,3 +68,36 @@ document
     });
   });
   new WOW().init();
+
+document.getElementById('emailForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const mail = document.getElementById('email').value;
+  const message = document.getElementById('mensagem').value;
+  const name = document.getElementById('nome').value;
+  const telefone = document.getElementById('telefone').value;
+
+
+  Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "gustavo111222lll@gmail.com",
+      Password: "BB8F6893B36B93EBA872EC31DA2B741A19F8",
+      To: 'gustavo111222lll@gmail.com',
+      From: "gustavo111222lll@gmail.com",
+      Subject: "Email para Gustavo Lima (Portfólio)",
+      Body: `Nome: ${name} <br> Email: ${mail} <br> Telefone: ${telefone} <br> Mensagem: ${message}`,
+  }).then(
+      message => {
+          alert("Mensagem enviada com sucesso");
+          document.getElementById('emailForm').reset()
+      }
+  ).catch(
+      error => {
+          alert("A mensagem não foi enviada" + error);
+      }
+  );
+});
+
+
+    
+

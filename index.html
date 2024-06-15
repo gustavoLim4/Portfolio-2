@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="icon" href="img/logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/animate.css" />
     <link
       rel="stylesheet"
@@ -18,7 +18,7 @@
     <header id="menufixo">
       <nav class="navbar">
         <div class="logo">
-          <a href="#"><img src="img/logo.png" alt="Logo" /></a>
+          <a href=""><img src="img/logo.png" alt="Logo" /></a>
         </div>
         <div class="menu-burger">
           <span></span>
@@ -36,22 +36,32 @@
     <main>
       <section id="sobremim">
         <div class="apresentacao">
-          <div class="programar animate__animated animate__fadeInLeft animate__slower	2s">
+          <div
+            class="programar animate__animated animate__fadeInLeft animate__slower 2s"
+          >
             <span>Programador Front-End</span>
           </div>
-          <h1 class="nome animate__animated animate__fadeInRight animate__slower	2s">Gustavo Lima</h1>
-          <p class="animate__animated animate__fadeInLeft  animate__slower	2s">
+          <h1
+            class="nome animate__animated animate__fadeInRight animate__slower 2s"
+          >
+            Gustavo Lima
+          </h1>
+          <p class="animate__animated animate__fadeInLeft animate__slower 2s">
             Olá, seja bem vindo(a)! Prepadado(a) para uma experiência
             arrebatadora? Prazer, sou desenvolvedor Front-End Jr. Fique a
             vontade para conhecer melhor o meu trabalho.
           </p>
-          <div class="botoesnome animate__animated animate__fadeInRight animate__slower	2s">
+          <div
+            class="botoesnome animate__animated animate__fadeInRight animate__slower 2s"
+          >
             <a href="img/CurrículoGustavoLima.pdf" download
               ><button>Baixar CV</button></a
             >
             <button>Meu Projetos</button>
           </div>
-          <div class="carts animate__animated animate__fadeInUp animate__fadeIn animate__slower	2s">
+          <div
+            class="carts animate__animated animate__fadeInUp animate__fadeIn animate__slower 2s"
+          >
             <a
               class="socialContainer containerFour"
               href="https://wa.me/5511944892012"
@@ -91,7 +101,9 @@
       </section>
       <section>
         <div class="TdCardsSkills" id="PGskills">
-          <div class="skills-front animate__animated animate__fadeIn animate__delay-1s animate__faster 10ms" >
+          <div
+            class="skills-front animate__animated animate__fadeIn animate__delay-1s animate__faster 10ms"
+          >
             <h1>Front-End</h1>
             <div class="container-front">
               <img src="img/front-end.png" alt="" />
@@ -103,9 +115,11 @@
               </ul>
             </div>
           </div>
-          <div class="skills animate__animated animate__fadeIn animate__delay-2s animate__faster 10ms">
+          <div
+            class="skills animate__animated animate__fadeIn animate__delay-2s animate__faster 10ms"
+          >
             <h1>Back-End</h1>
-            <div class="container-back ">
+            <div class="container-back">
               <img src="img/back-end.png" alt="" />
               <ul class="linguagens">
                 <li>PHP</li>
@@ -113,7 +127,9 @@
               </ul>
             </div>
           </div>
-          <div class="skills animate__animated animate__fadeIn animate__delay-3s animate__faster 10ms">
+          <div
+            class="skills animate__animated animate__fadeIn animate__delay-3s animate__faster 10ms"
+          >
             <h1>Banco de Dados</h1>
             <div class="container-banco">
               <img src="img/sql.png" alt="" />
@@ -375,13 +391,13 @@
           <div class="Imagemcontato">
             <img src="img/fotoAnimada2.png" alt="" />
           </div>
-          <form class="caixasDTX">
+          <form id="emailForm" class="caixasDTX">
             <h1>Contato</h1>
             <div class="container-nome">
               <input
                 required=""
                 type="text"
-                name="text"
+                name="nome"
                 id="nome"
                 class="input-nome"
                 required
@@ -394,6 +410,7 @@
                   required=""
                   type="email"
                   name="email"
+                  id="email"
                   class="input"
                   required
                 />
@@ -403,8 +420,8 @@
                 <input
                   required=""
                   type="text"
-                  name="text"
-                  id="nome"
+                  name="telefone"
+                  id="telefone"
                   class="input"
                   maxlength="15"
                   onkeyup="maximoDG(event)"
@@ -414,16 +431,21 @@
               </div>
             </div>
             <div class="container-msg">
-              <textarea class="input-msg" id="input-msg"></textarea>
+              <textarea
+                class="input-msg"
+                name="mensagem"
+                id="mensagem"
+              ></textarea>
               <label class="label">Mensagem </label>
             </div>
             <div class="btn-enviar">
-              <button class="btn-donate">Enviar</button>
+              <button type="submit" class="btn-donate" >Enviar</button>
             </div>
           </form>
         </div>
       </section>
     </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
   </body>
