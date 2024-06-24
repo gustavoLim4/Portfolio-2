@@ -92,8 +92,6 @@ body {
   transform: scale(0) translateY(50px);
   opacity: 0;
   transition: 0.7s;
-  
-  
 }
 .nav-links a:hover span {
   transform: scale(1) translateY(0px);
@@ -114,7 +112,6 @@ body {
   line-height: 35px;
   margin-bottom: 50px;
   width: 600px;
-  
 }
 .apresentacao button {
   border: none;
@@ -216,9 +213,24 @@ body {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #714aa8, #0078f8, #fff);
+  background-size: 400% 100%;
+  animation: degrade 35s linear infinite alternate;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  outline: none;
   text-transform: uppercase;
   margin: 60px 0px 0px;
+}
+@keyframes degrade {
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position: 300%;
+  }
 }
 .TodosOSCards {
   display: flex;
@@ -273,7 +285,7 @@ body {
 
 .linguagens {
   color: #fff;
-  margin: 20px 20px 20px 30px;
+  margin: 20px;
 }
 .linguagens li {
   font-size: 2em;
@@ -305,12 +317,14 @@ body {
 .skills:hover {
   transition: 0.5s;
   transform: translateY(-25px);
-  box-shadow: 20px 20px 20px -10px rgba(0, 140, 255, 0.534);
+  box-shadow: rgb(40, 40, 40) 0px 30px 60px -12px,
+    rgb(85, 85, 85) 0px 18px 36px -18px;
 }
 .skills-front:hover {
   transition: 0.5s;
   transform: translateY(-25px);
-  box-shadow: 20px 20px 20px -10px rgba(0, 128, 255, 0.534);
+  box-shadow: rgb(40, 40, 40) 0px 30px 60px -12px,
+    rgb(85, 85, 85) 0px 18px 36px -18px;
 }
 .skills img {
   width: 50%;
@@ -517,7 +531,7 @@ body {
 .contato {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin-bottom: 40px;
 }
 .caixasDTX {
   width: 45%;
@@ -712,7 +726,6 @@ body {
   width: 95%;
 }
 
-
 .btn-donate {
   --clr-font-main: hsla(0 0% 20% / 100);
   --btn-bg-1: hsla(194 100% 69% / 1);
@@ -728,11 +741,19 @@ body {
   font-weight: 500;
   transition: 0.8s;
   background-size: 280% auto;
-  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
   border: none;
   border-radius: var(--radii);
   color: var(--btn-bg-color);
-  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
 }
 
 .btn-donate:hover {
@@ -750,3 +771,177 @@ body {
   }
 }
 
+.gustavo {
+  color: white;
+  display: flex;
+}
+
+.tooltip-container {
+  height: 100px;
+  width: 155px;
+  border-radius: 5px;
+  background-color: #fff;
+  background-image: linear-gradient(
+    to left bottom,
+    #f2f5f8,
+    #ecf1f2,
+    #e7eceb,
+    #e3e7e4,
+    #e1e2de
+  );
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tooltip-container::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  border-radius: 5px;
+  background-color: fff;
+  background-image: linear-gradient(
+    to left bottom,
+    #f2f5f8,
+    #e4eaec,
+    #d8dfde,
+    #cdd3cf,
+    #c5c7c1
+  );
+  width: 100%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(-150deg) translateY(-110%);
+  transition: transform 0.3s ease;
+}
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.05) 1px, white 1px),
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, white 1px),
+    linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 1px, white 1px),
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, white 1px),
+    linear-gradient(white 3px, #f2f2f2 3px, #f2f2f2 78px, white 78px),
+    linear-gradient(-90deg, #aaa 1px, white 1px),
+    linear-gradient(-90deg, white 3px, #f2f2f2 3px, #f2f2f2 78px, white 78px),
+    linear-gradient(#aaa 1px, white 1px), #f2f2f2;
+  background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px,
+    80px 80px, 80px 80px;
+  padding: 5px 10px;
+  border: 1px solid rgb(206, 204, 204);
+  height: 65px;
+  width: 125px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 2.5px;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 10px salmon;
+  text-decoration: none;
+  color: black;
+}
+.tooltip-container:hover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.tooltip-container:hover::before {
+  transform: rotateY(0);
+  background-image: none;
+  background-color: white;
+}
+
+.tooltip-container:hover .tooltip {
+  top: -90px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+footer {
+  box-shadow: 0 0 20px #ffffff78;
+  border-radius: 38px;
+  padding: 20px;
+}
+.footerr {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40%;
+  padding: 20px;
+  margin-left: 10%;
+  border-bottom: 7px solid #fff;
+}
+
+.imgFooter img {
+  width: 55%;
+}
+
+.Btn {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(140, 140, 140, 0.231);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #005eff;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(83, 83, 83, 0.283);
+  backdrop-filter: blur(7px);
+}
+
+.iconsFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 100px;
+}
