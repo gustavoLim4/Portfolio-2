@@ -269,7 +269,7 @@ body {
 
 .skills-section h2 {
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   border-bottom: 5px solid #007BFF;
   padding-bottom: 5px;
   font-size: 28px;
@@ -284,20 +284,17 @@ body {
   background-color: #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
+  
 }
 
 .progress {
-  height: 25px;
+  height: 20px;
   background-color: #007BFF;
-  text-align: center;
-  line-height: 25px;
-  color: white;
-  border-radius: 10px;
+  width: 0;
+
 }
 
-#CShap {
-  margin-bottom: 35px;
-}
+
 .porcentagem h3 {
   font-size: 1.4em;
 }
@@ -539,6 +536,28 @@ body {
 
 .caixasDTX {
   width: 45%;
+  background: linear-gradient(#000000, #000000) padding-box,
+    linear-gradient(128deg, transparent 40%, #00a7fa, #00eeff) border-box;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  padding: 10px 10px 10px 35px;
+  margin-bottom: 25px;
+  background-size: 200% 100%;
+  animation: gradienter 5s ease infinite;
+}
+
+@keyframes gradienter {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .contato img {

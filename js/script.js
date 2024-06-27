@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const progressBars = document.querySelectorAll('.progress');
+  const percentagens = document.querySelectorAll('.percentage');
+
+  progressBars.forEach((bar, index) => {
+      const targetWidth = bar.getAttribute('data-target');
+      const targetPercentage = percentagens[index].getAttribute('data-target');
+      var width = 0;
+      const interval = setInterval(() => {
+          if (width >= targetWidth) {
+              clearInterval(interval);
+          } else {
+              width++;
+              bar.style.width = width + '%';
+              percentagens[index].textContent = width + '%';
+          }
+      }, 30);
+  });
+});
+
 window.onscroll = function () {
   let top = window.scrollY;
   if (top > 100) {
