@@ -255,6 +255,7 @@ body {
   font-size: 2.9em;
   justify-content: center;
   margin: 0;
+  text-shadow: 0 0 10px #1a1a1a, 0 0 20px #313131, 0 0 30px #282828, 0 0 40px #333333, 0 0 70px #8a8a8a, 0 0 80px #010101, 0 0 100px #212121;
 }
 
 .skills-row {
@@ -284,7 +285,7 @@ body {
   background-color: #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
-  
+
 }
 
 .progress {

@@ -11,6 +11,7 @@
     margin-bottom: 50px;
     width: 300px;
     text-align: justify;
+    justify-content: center;
   }
 
   .programar span {
@@ -18,6 +19,18 @@
     font-size: 18px;
 
   }
+
+  .radio-inputs {
+    width: 110px;
+    font-size: 8px;
+    font-weight: bolder;
+    height: 28px;
+  }
+
+  .radio-inputs .radio .name {
+    padding: 0.3rem 0;
+  }
+
 
   .botoesnome {
     display: flex;
@@ -51,6 +64,7 @@
     gap: 30px !important;
     background-color: #060606fc;
   }
+
   .logo img {
     height: 60px !important;
     border-radius: 15px !important;
@@ -72,10 +86,79 @@
     padding: 10px;
   }
 
+  .navbar {
+
+    padding: 15px 5% 15px 4%;
+  }
+
+  .input-nome {
+    width: 240px;
+  }
+
+  .input-msg {
+    width: 29%;
+  }
+
+  .container {
+    margin: 5px 0px 20px 17px;
+  }
+
+  .container-msg {
+    margin: 10px 0px 30px 17px;
+    height: 105px;
+  }
+
+  .btn-donate {
+    padding: 10px 25px;
+    min-width: 107px;
+    min-height: 55px;
+    margin-bottom: 20px;
+  }
+
+  .container-msg .input-msg:valid,
+  .container-msg .input-msg:focus {
+    padding: 35px 10px 0px;
+    height: 70px;
+  }
+
+  .input {
+    width: 240px;
+  }
+
+  .caixasInput {
+    display: block;
+    width: 100%;
+  }
+
+  .caixasDTX h1 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.1em;
+  }
+
+  .contato img {
+    display: none;
+  }
+
+  .container-nome {
+    margin: 10px 0px 20px 17px;
+  }
+
+  .Imagemcontato {
+    display: none;
+  }
+
+  .caixasDTX {
+    width: 90%;
+    padding: 0 !important;
+  }
+
   .TodosOSCards {
     margin: 0%;
     gap: 9%;
     row-gap: 9px;
+    margin-bottom: 50px;
   }
 
   .card {
@@ -83,10 +166,28 @@
     height: 110px;
     box-shadow: 0 0 0 2px #ffffffe8;
   }
+
   .card video {
     width: 215px;
     height: 200px;
   }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-titulo {
+    font-size: 11px;
+    display: flex;
+    justify-self: center;
+  }
+
+  .card-content P {
+    font-size: 0.4em;
+    text-align: justify;
+    justify-content: center;
+  }
+
 
 
   .skills-container h1 {
@@ -108,6 +209,61 @@
     font-size: 1.1em;
   }
 
+  .iconsFooter {
+    padding: 33px 0px 10px;
+    gap: 28px;
+    width: 300px;
+    justify-content: flex-start;
+  }
+
+  .svgContainer {
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .Btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Btn svg {
+    width: 25px;
+  }
+
+  .imgFooter img {
+    width: 100%;
+  }
+
+  .tooltip-container {
+    height: 40px;
+    width: 70px;
+    margin-top: 20%;
+
+  }
+
+  .tooltip-container:hover .tooltip {
+    top: -41px;
+  }
+
+  .tooltip {
+    height: 25px;
+    width: 45px;
+    font-size: 10px;
+
+  }
+
+  .footerr {
+    width: 84%;
+    margin-left: 0%;
+
+  }
+
+  footer {
+    border-radius: 35px 35px 25px 25px;
+    padding: 15px;
+
+  }
 }
 
 @media (max-width: 600px) {
