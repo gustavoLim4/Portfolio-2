@@ -41,6 +41,85 @@
 }
 
 @media (max-width: 375px) {
+  .radio-inputs {
+    width: 110px;
+    font-size: 8px;
+    font-weight: bolder;
+    height: 28px;
+  }
+
+  .radio-inputs .radio .name {
+    padding: 0.3rem 0;
+  }
+
+  .card-content {
+    padding: 5px 10px;
+  }
+
+  .card-titulo {
+    font-size: .8em !important;
+    display: flex;
+  }
+
+  .card-content P {
+    font-size: 0.5em;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .card {
+    width: 140px;
+    height: 120px;
+    box-shadow: 0 0 0 2px #ffffffe8;
+  }
+
+  .card video {
+    width: 215px;
+    height: 200px;
+  }
+
+  .TodosOSCards {
+    margin: 0%;
+    gap: 7%;
+    row-gap: 9px;
+    margin-bottom: 50px;
+  }
+
+
+  .skills-container h1 {
+    font-size: 2em;
+    margin-left: 20px;
+  }
+
+  .skills-caixa {
+    width: 95%;
+  }
+
+  .skills-row {
+    width: 107%;
+  }
+
+  .skills-section h2 {
+    margin-bottom: 11px;
+    font-size: 23px;
+  }
+
+  .skills-section {
+    margin: 0 15px;
+  }
+
+  .skills-container h1 {
+    font-size: 2em;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .imgSkills img {
+    display: none;
+  }
 
   .programar {
     display: flex;
@@ -392,7 +471,6 @@
   .card-titulo {
     font-size: 11px;
     display: flex;
-    justify-self: center;
   }
 
   .card-content P {
