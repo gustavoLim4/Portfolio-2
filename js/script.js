@@ -1,22 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+//    Efeito dos numeros da porcentagem chegarem onde estevem chegar  
+
+document.addEventListener("DOMContentLoaded", function () {
   const progressBars = document.querySelectorAll('.progress');
   const percentagens = document.querySelectorAll('.percentage');
 
   progressBars.forEach((bar, index) => {
-      const targetWidth = bar.getAttribute('data-target');
-      const targetPercentage = percentagens[index].getAttribute('data-target');
-      var width = 0;
-      const interval = setInterval(() => {
-          if (width >= targetWidth) {
-              clearInterval(interval);
-          } else {
-              width++;
-              bar.style.width = width + '%';
-              percentagens[index].textContent = width + '%';
-          }
-      }, 30);
+    const targetWidth = bar.getAttribute('data-target');
+    const targetPercentage = percentagens[index].getAttribute('data-target');
+    var width = 0;
+    const interval = setInterval(() => {
+      if (width >= targetWidth) {
+        clearInterval(interval);
+      } else {
+        width++;
+        bar.style.width = width + '%';
+        percentagens[index].textContent = width + '%';
+      }
+    }, 30);
   });
 });
+
+
+//                    Menu Fixo 
 
 window.onscroll = function () {
   let top = window.scrollY;
@@ -26,6 +32,15 @@ window.onscroll = function () {
     document.getElementById("menufixo").classList.remove("menufixo");
   }
 };
+
+//                    Menu Fixo 
+
+//      Efeito dos numeros da porcentagem chegarem onde estevem chegar  
+
+
+
+
+//                         Menu-Burgue
 
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".menu-burger");
@@ -53,6 +68,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//                            Menu-Burgue
+
+
+
+
+//              Mascara de telefone (11) 99999-9999
+
 const maximoDG = (event) => {
   let input = event.target;
   input.value = mascaratelefone(input.value);
@@ -66,6 +88,13 @@ const mascaratelefone = (value) => {
   return value;
 };
 
+//              Mascara de telefone (11) 99999-9999
+
+
+
+
+//           Função de não poder colocar numeros no nome 
+
 const CaixaDeNome = document.querySelector("#nome");
 
 CaixaDeNome.addEventListener("keypress", function (e) {
@@ -76,18 +105,11 @@ CaixaDeNome.addEventListener("keypress", function (e) {
   }
 });
 
-document
-  .querySelector(".linguagens")
-  .addEventListener("mouseleave", function () {
-    this.querySelectorAll("li").forEach(function (li) {
-      li.style.opacity = "0";
-      li.style.animation = "none";
-      setTimeout(() => {
-        li.style.animation = "";
-      }, 10);
-    });
-  });
-new WOW().init();
+//           Função de não poder colocar numeros no nome 
+
+
+
+//             Manda a mensagem do form para o email 
 
 document.getElementById('emailForm').addEventListener('submit', function (event) {
   event.preventDefault();
@@ -118,6 +140,11 @@ document.getElementById('emailForm').addEventListener('submit', function (event)
   );
 });
 
+//          Manda a mensagem do form para o email 
+
+// Efeito do scroll
+
+new WOW().init();
 
 
 
