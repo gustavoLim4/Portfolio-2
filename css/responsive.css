@@ -9,7 +9,6 @@
     width: 220px;
     flex-direction: column;
     background-color: #060606d9;
-    ;
     align-items: center;
     transform: translateX(100%);
   }
@@ -21,6 +20,7 @@
     align-items: center;
     justify-content: center;
     margin: 0;
+    z-index: 999999;
   }
 
   .menu-burger {
@@ -39,11 +39,252 @@
   }
 }
 
+@media (max-width: 425px) {
+
+  .programar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -320px;
+  }
+
+  .programar span {
+    padding: 15px 19px;
+    font-size: 20px;
+  }
+
+  .apresentacao {
+    width: 100%;
+  }
+
+  .apresentacao p {
+    margin-bottom: 15px;
+    width: 350px;
+    text-align: justify;
+    padding: 21px;
+    margin-top: 0;
+  }
+
+  .nome {
+    margin-top: 40px;
+    font-size: 2.8em;
+    display: flex;
+    justify-content: center;
+  }
+
+  #sobremim {
+    display: flex;
+    margin: 7% 0;
+    justify-content: center;
+    gap: 18%;
+    flex-direction: column-reverse;
+  }
+
+  .fotominha img {
+    width: 80%;
+    position: relative;
+    top: 90px;
+    margin: 40px 0px 15px;
+  }
+
+  .fotominha {
+    width: 100%;
+    animation: animate 1s ease-in-out 0.1s 1 forwards;
+    justify-content: center;
+    display: flex;
+  }
+
+  .botoesnome {
+    display: flex;
+    justify-content: center;
+  }
+
+  .apresentacao button {
+    font-size: 1.2em;
+    padding: 18px;
+  }
+
+  .apresentacao button:nth-child(1) {
+    margin-right: 15px;
+  }
+
+  .carts {
+    width: 100%;
+    gap: 35px;
+  }
+
+  .socialContainer {
+    width: 90px;
+    height: 90px;
+  }
+
+  .socialSvg {
+    width: 40px;
+  }
+
+  .skills-caixa {
+
+    flex-direction: column-reverse;
+  }
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .skills-section {
+    margin: 0 20px;
+  }
+
+  .skills-section h2 {
+
+    margin-bottom: 15px;
+  }
+
+  .skills-container h1 {
+
+    font-size: 2.3em;
+  }
+
+  .imgSkills {
+    display: none;
+  }
+
+  #DB {
+    margin-top: -15px;
+  }
+
+
+  .footerr {
+    width: 85%;
+    margin-left: 1%;
+    gap: 25px;
+  }
+
+  .imgFooter img {
+    width: 70%;
+  }
+
+  .tooltip-container {
+    height: 70px;
+    width: 110px;
+  }
+
+  .tooltip-container:hover .tooltip {
+    top: -90px;
+    opacity: 1;
+    transition-duration: 0.3s;
+  }
+
+  .tooltip {
+    height: 40px;
+    width: 87px;
+    font-size: 20px;
+  }
+
+  .tooltip-container:hover .tooltip {
+    top: -60px;
+  }
+
+  .iconsFooter {
+    padding: 25px;
+    gap: 30px;
+  }
+
+  .Btn {
+    width: 65px;
+    height: 65px;
+  }
+
+  .svgContainer {
+    width: 65px;
+    height: 65px;
+  }
+
+  .Btn svg {
+    width: 35px;
+  }
+
+  .contato {
+    display: block;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .Imagemcontato {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+  }
+
+  .contato img {
+    width: 60%;
+    margin: 0;
+  }
+
+  .caixasDTX {
+    width: 77%;
+    padding: 25px;
+    margin: 0 auto;
+  }
+
+  .caixasDTX h1 {
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .input-nome {
+    width: 100%;
+  }
+
+  .input-msg {
+    width: 89%;
+
+  }
+
+  .container-msg {
+    width: 100%;
+    height: 150px;
+  }
+
+  .caixasInput {
+    display: block;
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .container-msg .input-msg:valid,
+  .container-msg .input-msg:focus {
+    height: 80px;
+    padding: 45px 20px 15px;
+  }
+
+  .btn-donate {
+    min-width: 150px;
+    min-height: 65px;
+  }
+
+}
+
 
 /*                                         tela 375px            */
 
 
 @media (max-width: 375px) {
+  .socialContainer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .socialSvg {
+    width: 30px;
+  }
+
   .radio-inputs {
     width: 110px;
     font-size: 8px;
@@ -133,12 +374,12 @@
     margin-bottom: 15px;
     width: 327px;
     text-align: justify;
-    padding: 30px;
+    padding: 23px;
     margin-top: 0;
   }
 
   .nome {
-    margin-top: 40px;
+    margin-top: 80px;
     font-size: 2.7em;
     display: flex;
     justify-content: center;
@@ -146,7 +387,7 @@
 
   .carts {
     width: 100%;
-    gap: 40px;
+    gap: 35px;
   }
 
   .apresentacao button:nth-child(1) {
@@ -162,6 +403,8 @@
   .programar span {
     padding: 15px 14px;
     font-size: 20px;
+    top: 320px !important;
+    position: absolute;
 
   }
 
@@ -242,14 +485,15 @@
   }
 
   .contato img {
-    width: 60%;
-    margin: 0;
+    width: 80%;
+    margin: 45px 0px 5px;
   }
 
   .Imagemcontato {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 0;
   }
 
   .contato {
@@ -277,7 +521,7 @@
   }
 
   .imgFooter img {
-    width: 135%;
+    width: 65%;
   }
 
   .tooltip-container {
@@ -297,8 +541,18 @@
 
 
 @media (max-width: 320px) {
+
+  .socialContainer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .socialSvg {
+    width: 30px;
+  }
+
   .nome {
-    margin-top: 40px;
+    margin-top: 90px;
     font-size: 2.3em;
     display: flex;
     justify-content: center;
@@ -307,15 +561,16 @@
 
   .apresentacao p {
     margin-bottom: 50px;
-    width: 300px;
+    width: 297px;
     text-align: justify;
-    justify-content: center;
+    padding: 12px;
   }
 
   .programar span {
     padding: 12px 7px;
     font-size: 18px;
-
+    top: 330px !important;
+    position: absolute;
   }
 
   .radio-inputs {
@@ -356,6 +611,7 @@
 
   .carts {
     width: 100%;
+    gap: 25px;
   }
 
   .nav-links.active {
@@ -394,7 +650,7 @@
   }
 
   .input-msg {
-    width: 29%;
+    width: 78%;
   }
 
   .container {
@@ -529,7 +785,7 @@
   }
 
   .imgFooter img {
-    width: 100%;
+    width: 60%;
   }
 
   .tooltip-container {
