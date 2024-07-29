@@ -240,8 +240,7 @@
   }
 
   .input-msg {
-    width: 89%;
-
+    width: 94%;
   }
 
   .container-msg {
@@ -261,7 +260,7 @@
   .container-msg .input-msg:valid,
   .container-msg .input-msg:focus {
     height: 80px;
-    padding: 45px 20px 15px;
+    padding: 45px 10px 15px;
     font-size: 15px;
   }
 
