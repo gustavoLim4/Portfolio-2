@@ -44,13 +44,14 @@
   .programar {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: -320px;
   }
 
   .programar span {
-    padding: 15px 19px;
+    padding: 15px 14px;
     font-size: 20px;
+    top: 145px !important;
+    position: absolute;
+    z-index: 9999;
   }
 
   .apresentacao {
@@ -84,7 +85,7 @@
     width: 80%;
     position: relative;
     top: 90px;
-    margin: 40px 0px 15px;
+    margin: 20px 0px 65px;
   }
 
   .fotominha {
@@ -205,16 +206,16 @@
   }
 
   .contato {
-    display: block;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    flex-direction: column-reverse;
   }
 
   .Imagemcontato {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 40px 0px;
+    margin: 25px 0px;
   }
 
   .contato img {
@@ -267,6 +268,52 @@
   .btn-donate {
     min-width: 150px;
     min-height: 65px;
+  }
+
+  .radio-inputs .radio .name {
+    padding: 0.3rem 0;
+  }
+
+  .card-content {
+    padding: 5px 10px;
+  }
+
+  .card-titulo {
+    font-size: .9em !important;
+    display: flex;
+  }
+
+  .card-content P {
+    font-size: 0.5em;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 3px;
+  }
+
+  .card {
+    width: 160px;
+    height: 120px;
+    box-shadow: 0 0 0 2px #ffffffe8;
+  }
+
+  .card video {
+    width: 215px;
+    height: 200px;
+  }
+
+  .TodosOSCards {
+    margin: 0%;
+    gap: 8%;
+    row-gap: 9px;
+    margin-bottom: 50px;
+  }
+
+  .radio-inputs {
+    width: 110px;
+    font-size: 8px;
+    font-weight: bolder;
+    height: 28px;
   }
 
 }
@@ -403,8 +450,9 @@
   .programar span {
     padding: 15px 14px;
     font-size: 20px;
-    top: 320px !important;
+    top: 145px !important;
     position: absolute;
+    z-index: 9999;
 
   }
 
@@ -569,7 +617,7 @@
   .programar span {
     padding: 12px 7px;
     font-size: 18px;
-    top: 330px !important;
+    top: 140px !important;
     position: absolute;
   }
 
