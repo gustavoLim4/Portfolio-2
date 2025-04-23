@@ -1,3 +1,112 @@
+@media (max-width: 1740px) {
+  #sobremim {
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .input {
+    width: 365px;
+  }
+  .input-msg {
+    width: 92%;
+  }
+}
+@media (max-width: 1700px) {
+  #sobremim {
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .input {
+    width: 360px;
+  }
+  .input-msg {
+    width: 90%;
+  }
+}
+@media (max-width: 1550px) {
+  #sobremim {
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .input {
+    width: 305px;
+  }
+  .input-msg {
+    width: 77%;
+  }
+}
+@media (max-width: 1440px) {
+  #sobremim {
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .input {
+    width: 297px;
+  }
+  .input-msg {
+    width: 75%;
+  }
+}
+@media (max-width: 1420px) {
+  #sobremim {
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .input {
+    width: 290px;
+  }
+  .input-msg {
+    width: 73%;
+  }
+}
+@media (max-width: 1280px) {
+  #sobremim {
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .input {
+    width: 260px;
+  }
+  .input-msg {
+    width: 66%;
+  }
+}
+@media (max-width: 1200px) {
+  #sobremim {
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .input {
+    width: 240px;
+  }
+  .input-msg {
+    width: 61%;
+  }
+}
+@media (max-width: 1080px) {
+  #sobremim {
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .input {
+    width: 215px;
+  }
+  .input-msg {
+    width: 55%;
+  }
+}
+@media (max-width: 900px) {
+  #sobremim {
+    justify-content: space-around;
+    gap: 0%;
+  }
+  .input {
+    width: 100px;
+  }
+  .input-msg {
+    width: 44%;
+  }
+}
+
 /*                                         tela 600px */
 
 @media (max-width: 600px) {
@@ -40,7 +149,6 @@
 }
 
 @media (max-width: 425px) {
-
   .programar {
     display: flex;
     justify-content: center;
@@ -124,7 +232,6 @@
   }
 
   .skills-caixa {
-
     flex-direction: column-reverse;
   }
 
@@ -137,12 +244,10 @@
   }
 
   .skills-section h2 {
-
     margin-bottom: 15px;
   }
 
   .skills-container h1 {
-
     font-size: 2.3em;
   }
 
@@ -153,7 +258,6 @@
   #DB {
     margin-top: -15px;
   }
-
 
   .footerr {
     width: 85%;
@@ -233,7 +337,6 @@
     margin-top: 1px;
     display: flex;
     justify-content: center;
-
   }
 
   .input-nome {
@@ -279,7 +382,7 @@
   }
 
   .card-titulo {
-    font-size: .9em !important;
+    font-size: 0.9em !important;
     display: flex;
   }
 
@@ -315,12 +418,9 @@
     font-weight: bolder;
     height: 28px;
   }
-
 }
 
-
 /*                                         tela 375px            */
-
 
 @media (max-width: 375px) {
   .socialContainer {
@@ -348,7 +448,7 @@
   }
 
   .card-titulo {
-    font-size: .8em !important;
+    font-size: 0.8em !important;
     display: flex;
   }
 
@@ -376,7 +476,6 @@
     row-gap: 9px;
     margin-bottom: 50px;
   }
-
 
   .skills-container h1 {
     font-size: 2em;
@@ -453,7 +552,6 @@
     top: 145px !important;
     position: absolute;
     z-index: 9999;
-
   }
 
   .botoesnome {
@@ -477,7 +575,6 @@
     height: 35px;
     width: 70px;
     font-size: 15px;
-
   }
 
   .btn-donate {
@@ -508,7 +605,7 @@
 
   .input {
     width: 300px;
-    padding: 0px 8px
+    padding: 0px 8px;
   }
 
   .caixasInput {
@@ -565,7 +662,7 @@
 
   .iconsFooter {
     padding: 25px;
-    gap: 27px
+    gap: 27px;
   }
 
   .imgFooter img {
@@ -583,13 +680,9 @@
   }
 }
 
-
 /*                                         tela 320px */
 
-
-
 @media (max-width: 320px) {
-
   .socialContainer {
     width: 70px;
     height: 70px;
@@ -604,7 +697,6 @@
     font-size: 2.3em;
     display: flex;
     justify-content: center;
-
   }
 
   .apresentacao p {
@@ -632,7 +724,6 @@
     padding: 0.3rem 0;
   }
 
-
   .botoesnome {
     display: flex;
     justify-content: center;
@@ -650,7 +741,7 @@
   .apresentacao button {
     font-size: 0.9em;
     padding: 15px;
-    border-radius: 10px
+    border-radius: 10px;
   }
 
   .apresentacao button:nth-child(1) {
@@ -689,7 +780,6 @@
   }
 
   .navbar {
-
     padding: 15px 5% 15px 4%;
   }
 
@@ -789,8 +879,6 @@
     justify-content: center;
   }
 
-
-
   .skills-container h1 {
     margin: 25px 0px;
     font-size: 1.8em;
@@ -820,7 +908,6 @@
   .svgContainer {
     width: 50px;
     height: 50px;
-
   }
 
   .Btn {
@@ -840,7 +927,6 @@
     height: 40px;
     width: 70px;
     margin-top: 20%;
-
   }
 
   .tooltip-container:hover .tooltip {
@@ -851,18 +937,15 @@
     height: 25px;
     width: 45px;
     font-size: 10px;
-
   }
 
   .footerr {
     width: 84%;
     margin-left: 0%;
-
   }
 
   footer {
     border-radius: 35px 35px 25px 25px;
     padding: 15px;
-
   }
 }
